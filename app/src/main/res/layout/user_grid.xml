@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <GridView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/friendsGrid"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:numColumns="auto_fit"
+        android:columnWidth="90dp"
+        android:stretchMode="columnWidth"
+        android:horizontalSpacing="8dp"
+        android:verticalSpacing="8dp"
+        android:clipToPadding="false"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"/>
+    <!-- cliptopadding gives you the small paddding between the item and the border of
+        the app -->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@android:id/empty"
+        android:text="@string/empty_friends"/>
+</RelativeLayout>

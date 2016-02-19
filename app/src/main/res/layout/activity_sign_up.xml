@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.denniskim.ribbit2.UI.SignUpActivity"
+                style="@style/AuthBackground">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="Background Image"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubtitle"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userLabel"
+            android:hint="@string/username_hint"
+            android:textColorHint="@color/background_gray"
+            android:textSize="14sp"/>
+
+
+        <!-- this creates that edit text view to have prioirity and create a blinking cursor when it launches -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:id="@+id/passwordLabel"
+            android:textColorHint="@color/background_gray"
+            android:textSize="14sp"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:ems="10"
+            android:id="@+id/emailLabel"
+            android:hint="@string/email_hint"
+            android:textSize="14sp"
+            android:textColorHint="@color/background_gray"
+            android:layout_below="@+id/passwordLabel"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"/>
+
+        <!-- (inputType) this declaration is for how the keyboard should be showed
+            so if you want all numbers then thats where you would do it -->
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/buttonDivider"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextLayout"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/button_divider"
+        android:contentDescription="button_divider"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="SIGN UP"
+        android:id="@+id/signUpButton"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_alignLeft="@+id/backgroundImage"
+        android:background="@drawable/button_custom"
+        android:layout_marginLeft="16dp"
+
+        android:textSize = "13sp"
+        android:textColor="@color/text_color"
+        android:layout_toLeftOf="@id/buttonDivider"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CANCEL"
+        android:id="@+id/cancelButton"
+        android:layout_below="@+id/editTextLayout"
+        android:background="@drawable/button_custom"
+
+        android:layout_marginRight="16dp"
+        android:textSize = "13sp"
+        android:textColor="@color/text_color"
+        android:layout_toRightOf="@id/buttonDivider"/>
+
+
+</RelativeLayout>

@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name">Snapper</string>
+
+    <string name="title_section1">Inbox</string>
+    <string name="title_section2">Friends</string>
+
+
+    <string name="hello_world">Hello world!</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="username_hint">Username</string>
+    <string name="password_hint">Password</string>
+    <string name="login_button_label">SIGN IN</string>
+    <string name="sign_up_text">Don\'t have an account? Sign up!</string>
+    <string name="title_activity_sign_up">SignUpActivity</string>
+    <string name="email_hint">Email</string>
+    <string name="signup_error_message">Please make sure to add a username, password, and/or email</string>
+    <string name="signup_error_title">Oops!</string>
+    <string name="login_error_message">Please make sure to add a username, password</string>
+    <string name="login_error_title">Oops!</string>
+    <string name="menu_logout_label">Logout</string>
+    <string name="empty_friends">Add Friends to begin!</string>
+    <string name="empty_inbox">No new messages!</string>
+    <string name="friend_edit_label">Edit Friends</string>
+    <string name="title_activity_edit_friends">Edit Friends</string>
+    <string name="error_title">We\'re Sorry</string>
+    <string name="error_Uri">There was a problem accessing your device\'s external storage</string>
+    <string name="camera_label">Camera</string>
+    <string name="empty_recipients">Choose some friends!</string>
+    <string name ="menu_send_label">Send</string>
+    <string-array name="camera_choices">
+        <item>Take Picture</item>
+        <item>Take Video</item>
+        <item>Choose Picture</item>
+        <item>Choose Video</item>
+    </string-array>
+    <string name="title_activity_recipients">"Choose Recipients "</string>
+    <string name="title_activity_view_image">Ribbit</string>
+    <string name="push_message">You have a new Snapper message from %s!</string>
+
+</resources>

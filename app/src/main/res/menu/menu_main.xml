@@ -1,0 +1,24 @@
+<!-- this file handles everything in the action bar -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+      xmlns:app="http://schemas.android.com/apk/res-auto"
+      xmlns:tools="http://schemas.android.com/tools"
+      tools:context=".MainActivity">
+
+
+    <item android:id="@+id/action_logut"
+          android:title="@string/menu_logout_label"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_edit_friends"
+          android:title = "@string/friend_edit_label"
+          android:orderInCategory="100"
+          app:showAsAction="never"/>
+
+    <item android:id="@+id/action_camera"
+          android:title = "@string/camera_label"
+          android:icon="@drawable/ic_menu_camera"
+          app:showAsAction="always"/>
+
+</menu>

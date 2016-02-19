@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- File created by the Android Action Bar Style Generator
+
+     Copyright (C) 2011 The Android Open Source Project
+     Copyright (C) 2012 readyState Software Ltd
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<resources>
+<!--
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
+    </style> -->
+
+    <style name="Theme.Snapper" parent="@style/Theme.AppCompat.Light">
+        <item name="android:actionOverflowButtonStyle">@style/Theme.Snapper.Overflow</item>
+        <item name="actionBarItemBackground">@drawable/selectable_background_snapper</item>
+        <item name="popupMenuStyle">@style/PopupMenu.Snapper</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Snapper</item>
+        <item name="actionBarTabStyle">@style/ActionBarTabStyle.Snapper</item>
+        <item name="actionDropDownStyle">@style/DropDownNav.Snapper</item>
+        <item name="actionBarStyle">@style/ActionBar.Solid.Snapper</item>
+        <item name="actionModeBackground">@drawable/cab_background_top_snapper</item>
+        <item name="actionModeSplitBackground">@drawable/cab_background_bottom_snapper</item>
+        <item name="actionModeCloseButtonStyle">@style/ActionButton.CloseMode.Snapper</item>
+        <item name="android:listViewStyle">@style/Theme.Snapper.LightPurpleBackground</item>
+        <item name="android:gridViewStyle">@style/Theme.Snapper.LightPurpleBackground.GridViewChild</item>
+    </style>
+
+    <style name= "Theme.Snapper.LightPurpleBackground">
+        <item name="android:background">@color/light_purple_background</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <style name= "Theme.Snapper.LightPurpleBackground.GridViewChild">
+        <item name="android:padding">8dp</item>
+        <item name="android:divider">@null</item>
+    </style>
+
+    <!-- this is for the overflow button -->
+    <style name="Theme.Snapper.Overflow" parent="@style/Widget.AppCompat.ActionButton.Overflow">
+        <item name = "android:src">@drawable/ic_menu_overflow</item>
+    </style>
+
+    <style name="ActionBar.Solid.Snapper" parent="@style/Widget.AppCompat.Light.ActionBar.Solid">
+        <item name="background">@drawable/ab_solid_snapper</item>
+        <item name="backgroundStacked">@drawable/ab_stacked_solid_snapper</item>
+        <item name="backgroundSplit">@drawable/ab_bottom_solid_snapper</item>
+        <item name="progressBarStyle">@style/ProgressBar.Snapper</item>
+        <item name="android:titleTextStyle">@style/ActionBar.Solid.Snapper.TitleTextStyle</item>
+
+    </style>
+
+    <!-- this is for the text of the app name on the actionabr -->
+    <style name="ActionBar.Solid.Snapper.TitleTextStyle"
+           parent ="@style/TextAppearance.AppCompat.Widget.ActionBar.Title">
+            <item name="android:textColor">@color/text_color</item>
+
+    </style>
+
+    <style name="ActionBar.Transparent.Snapper" parent="@style/Widget.AppCompat.Light.ActionBar">
+        <item name="background">@drawable/ab_transparent_snapper</item>
+        <item name="progressBarStyle">@style/ProgressBar.Snapper</item>
+    </style>
+
+    <style name="PopupMenu.Snapper" parent="@style/Widget.AppCompat.Light.PopupMenu">
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_snapper</item>
+    </style>
+
+    <style name="DropDownListView.Snapper" parent="@style/Widget.AppCompat.Light.ListView.DropDown">
+        <item name="android:listSelector">@drawable/selectable_background_snapper</item>
+    </style>
+
+    <style name="ActionBarTabStyle.Snapper" parent="@style/Widget.AppCompat.Light.ActionBar.TabView">
+        <item name="android:background">@drawable/tab_indicator_ab_snapper</item>
+    </style>
+
+    <style name="DropDownNav.Snapper" parent="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar">
+        <item name="android:background">@drawable/spinner_background_ab_snapper</item>
+        <item name="android:popupBackground">@drawable/menu_dropdown_panel_snapper</item>
+        <item name="android:dropDownSelector">@drawable/selectable_background_snapper</item>
+    </style>
+
+    <style name="ProgressBar.Snapper" parent="@style/Widget.AppCompat.ProgressBar.Horizontal">
+        <item name="android:progressDrawable">@drawable/progress_horizontal_snapper</item>
+    </style>
+
+    <style name="ActionButton.CloseMode.Snapper" parent="@style/Widget.AppCompat.Light.ActionButton.CloseMode">
+        <item name="android:background">@drawable/btn_cab_done_snapper</item>
+    </style>
+
+    <!-- this style is only referenced in a Light.DarkActionBar based theme -->
+    <style name="Theme.Snapper.Widget" parent="@style/Theme.AppCompat">
+        <item name="popupMenuStyle">@style/PopupMenu.Snapper</item>
+        <item name="dropDownListViewStyle">@style/DropDownListView.Snapper</item>
+    </style>
+
+
+
+
+    <style name="AuthBackground">
+        <item name="android:background">@drawable/background_fill</item>
+    </style>
+
+    <style name = "AuthBackgroundImage">
+        <item name = "android:layout_width">match_parent</item>
+        <item name = "android:layout_height">match_parent</item>
+        <item name = "android:layout_alignParentTop">true</item>
+        <item name = "android:layout_alignParentLeft">true</item>
+        <item name = "android:src">@drawable/background</item>
+        <item name = "android:scaleType">fitStart</item>
+
+    </style>
+
+    <style name = "AuthTitle">
+        <item name = "android:layout_width">wrap_content</item>
+        <item name = "android:layout_height">wrap_content</item>
+        <item name = "android:text">@string/app_name</item>
+        <item name = "android:layout_alignParentTop">true</item>
+        <item name = "android:layout_centerHorizontal">true</item>
+        <item name = "android:layout_marginTop">32dp</item>
+        <item name = "android:textSize">60sp</item>
+        <item name = "android:textColor">@android:color/white</item>
+        <item name = "android:textStyle">bold</item>
+    </style>
+
+    <style name ="AuthSubtitle" parent ="AuthTitle">
+        <item name = "android:textSize">13sp</item>
+        <item name = "android:layout_below">@+id/title</item>
+        <item name = "android:text">Dennis Kim Project</item>
+        <item name = "android:layout_alignParentTop">false</item>
+        <item name = "android:layout_marginTop">0dp</item>
+
+    </style>
+
+</resources>

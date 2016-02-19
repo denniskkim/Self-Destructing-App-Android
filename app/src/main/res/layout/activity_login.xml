@@ -1,0 +1,91 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context="com.example.denniskim.ribbit.LoginActivity"
+                style="@style/AuthBackground">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="Background Image"/>
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthSubtitle"/>
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="32dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="@android:color/white">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/userLabel"
+            android:hint="@string/username_hint"
+            android:textColorHint="@color/background_gray"
+            android:textSize="14sp"/>
+
+
+            <!-- this creates that edit text view to have prioirity and create a blinking cursor when it launches -->
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:ems="10"
+            android:hint="@string/password_hint"
+            android:id="@+id/passwordLabel"
+            android:textColorHint="@color/background_gray"
+            android:textSize="14sp"/>
+
+    <!-- (inputType) this declaration is for how the keyboard should be showed
+        so if you want all numbers then thats where you would do it -->
+    </LinearLayout>
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/login_button_label"
+        android:id="@+id/loginButton"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_alignLeft="@+id/backgroundImage"
+        android:layout_alignStart="@+id/backgroundImage"
+        android:background="@drawable/button_custom"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textSize = "13sp"
+        android:textColor="@color/text_color"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text"
+        android:id="@+id/signUpLabel"
+        android:layout_marginTop = "12dp"
+        android:layout_below="@id/loginButton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="138dp"
+        android:textColor="@android:color/white"/>
+
+
+
+
+</RelativeLayout>
